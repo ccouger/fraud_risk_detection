@@ -67,26 +67,26 @@ with st.sidebar:
 
     st.caption('Keras Neural Network (Deployed)')
     col1, col2 = st.columns(2)
-    col1.metric('Precision', f'{nn_metrics['precision']:.4f}')
-    col2.metric('Recall', f'{nn_metrics['recall']:.4f}')
-    col1.metric('F1 Score' , f'{nn_metrics['f1']:.4f}')
-    col2.metric('PR-AUC', f'{nn_metrics['auc_pr']:.4f}')
+    col1.metric('Precision', f"{nn_metrics['precision']:.4f}")
+    col2.metric('Recall', f"{nn_metrics['recall']:.4f}")
+    col1.metric('F1 Score' , f"{nn_metrics['f1']:.4f}")
+    col2.metric('PR-AUC', f"{nn_metrics['auc_pr']:.4f}")
 
     st.divider()
 
     st.caption('XGBoost (SHAP Explainability)')
     col3, col4 = st.columns(2)
-    col3.metric('Precision', f'{xgb_metrics['precision']:.4f}')
-    col4.metric('Recall', f'{xgb_metrics['recall']:.4f}')
-    col3.metric('F1 Score' , f'{xgb_metrics['f1']:.4f}')
-    col4.metric('PR-AUC', f'{xgb_metrics['auc_pr']:.4f}')
+    col3.metric('Precision', f"{xgb_metrics['precision']:.4f}")
+    col4.metric('Recall', f"{xgb_metrics['recall']:.4f}")
+    col3.metric('F1 Score' , f"{xgb_metrics['f1']:.4f}")
+    col4.metric('PR-AUC', f"{xgb_metrics['auc_pr']:.4f}")
 
     st.divider()
 
     st.caption('ARIMA Forecasting')
     col5, col6 = st.columns(2)
-    col5.metric('MAE', f'{metadata.get('forecast_mae', 0):.4f}')
-    col6.metric('RMSE', f'{metadata.get('forecast_rmse')}')
+    col5.metric('MAE', f"{metadata.get('forecast_mae', 0):.4f}")
+    col6.metric('RMSE', f"{metadata.get('forecast_rmse')}")
 
     st.divider()
 
