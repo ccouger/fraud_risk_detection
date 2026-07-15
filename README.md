@@ -131,7 +131,7 @@ Features V1–V28 are PCA-transformed for confidentiality. `Amount` and `Time` a
 
 ## Live Demo
 
-🔗 **[Launch Streamlit App](#)** *(link to be added after deployment)*
+🔗 **[Launch Streamlit App](https://fraud-risk-detection-corbincouger.streamlit.app/)**
 
 ---
 
