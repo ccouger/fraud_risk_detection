@@ -276,7 +276,7 @@ with tab2:
         f1.metric('Forecast Horizon', f'{horizon} hours')
         f2.metric('Peak Predicted', f'{forecast_mean.max():.1f} fraud/hour')
         f3.metric('Mean Predicted', f'{forecast_mean.mean():.1f} fraud/hour')
-        f4.metric('Model MAE', f'{metadata.get('forecast_mae', 0):.4f}')
+        f4.metric('Model MAE', f"{metadata.get('forecast_mae', 0):.4f}")
 
         ## forecast plot
         fig, axes = plt.subplots(2, 1, figsize = (14,9))
