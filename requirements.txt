@@ -1,27 +1,27 @@
 # ── Core data science ─────────────────────────────────────────────────────────
-numpy==2.4.4
-pandas==2.3.3
-scikit-learn==1.8.0
-imbalanced-learn==0.14.1
+numpy
+pandas
+scikit-learn
+imbalanced-learn
 
 # ── Modeling ──────────────────────────────────────────────────────────────────
-xgboost==3.2.0
-tensorflow==2.21.0
-keras==3.14.0
+xgboost
+tensorflow
+keras
 
 # ── Explainability ────────────────────────────────────────────────────────────
-shap==0.52.0
+shap
 
 # ── Forecasting ───────────────────────────────────────────────────────────────
-statsmodels==0.14.6
-prophet==1.3.0
+statsmodels
+prophet
 
 # ── Visualization ─────────────────────────────────────────────────────────────
-matplotlib==3.10.8
-seaborn==0.13.2
+matplotlib
+seaborn
 
 # ── Dashboard ─────────────────────────────────────────────────────────────────
-streamlit==1.58.0
+streamlit
 
 # ── Utilities ─────────────────────────────────────────────────────────────────
-scipy==1.17.1
+scipy
