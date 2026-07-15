@@ -6,7 +6,7 @@ imbalanced-learn
 
 # ── Modeling ──────────────────────────────────────────────────────────────────
 xgboost
-tensorflow
+tensorflow-cpu
 keras
 
 # ── Explainability ────────────────────────────────────────────────────────────
