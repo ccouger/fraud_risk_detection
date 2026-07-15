@@ -141,4 +141,4 @@ Built by **Corbin Couger** — Data Scientist with 5+ years of experience in pre
 
 Currently pursuing a Professional Certificate in AI & ML from Purdue University / IBM.
 
-[Portfolio](#) · [LinkedIn](#) · [corbin.0007@yahoo.com](mailto:corbin.0007@yahoo.com)
+[Portfolio](https://www.couger.me) · [LinkedIn](https://www.linkedin.com/in/corbincouger/) · [corbin.0007@yahoo.com](mailto:corbin.0007@yahoo.com)
