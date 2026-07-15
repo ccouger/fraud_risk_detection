@@ -1,6 +1,6 @@
 # Credit Card Fraud Detection & Transaction Risk Scoring
 
-> **$38 billion.** That's the estimated annual cost of payment card fraud globally — and it's growing.  
+> **$38 billion.** That's the estimated annual cost of payment card fraud globally, and it's growing.  
 > This project builds an end-to-end ML system that detects fraudulent transactions in real time and forecasts fraud volume spikes before they happen.
 
 ---
@@ -36,7 +36,7 @@ A live **Streamlit dashboard** accepts transaction inputs and returns a real-tim
 | Neural Net (TensorFlow) | 0.95 | 0.82 | 0.88 | 0.85 |
 
 
-**Business translation:** At the optimal classification threshold, the model catches an estimated **$49,000 Euros saved per 285,000 transactions** while keeping false positive rates operationally acceptable.
+**Business translation:** At the optimal classification threshold, the model catches an estimated **$49,000 Euros saved per 285,000 transactions** in a 48 hour period, while keeping false positive rates operationally acceptable.
 
 ---
 
@@ -85,15 +85,10 @@ fraud-risk-detection/
 ├── data/                        # Raw and processed transaction data (raw gitignored)
 │
 ├── notebooks/
-│   ├── 01_EDA.ipynb             # Class imbalance analysis, feature distributions
+│   ├── 01_EDA.ipynb             # Class imbalance analysis, feature distributions and ranking, time analysis
 │   ├── 02_preprocessing.ipynb  # SMOTE, feature scaling, train/val/test split
-│   ├── 03_modeling.ipynb        # XGBoost vs TensorFlow, PR curves, SHAP values
+│   ├── 03_modeling.ipynb        # XGBoost vs Keras NN, PR curves, SHAP values, threshold optimization
 │   └── 04_forecasting.ipynb     # ARIMA + Prophet fraud volume forecasting
-│
-├── src/
-│   ├── model.py                 # Training logic, predict_proba risk scoring
-│   ├── features.py              # Feature engineering pipeline
-│   └── forecasting.py           # Time aggregation, model fitting, predictions
 │
 ├── models/                      # Saved model artifacts (.pkl / .pt)
 ├── app.py                       # Streamlit dashboard — live risk scoring
@@ -101,12 +96,22 @@ fraud-risk-detection/
 ├── requirements.txt
 └── README.md
 ```
+## Key Findings
+
+- V14 is the strongest fraud signal feature in the dataset
+- Keras NN was best performing model for detecting fraud (in compairson to XGBoost)
+- ARIMA(0,0,0) model outperformed Prophet on this short data window
+- Keras NN has strict conservative fraud flagging threshold
+- At the optimal threshold, 95% precision means that only 5 false alarms per 100 flagged transactions
 
 ---
 
 ## Running the Dashboard
 
 ```bash
+# Clone my repo
+git clone https://github.com/ccouger/fraud_risk_detection
+
 # Install dependencies
 pip install -r requirements.txt
 
